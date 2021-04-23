@@ -16,12 +16,9 @@ async function newFunction(){
     for(i = 0; i <= data.length; i++){
         const name = data[i].name
         const city = data[i].city
-        if(i <= 15){
+        if(data[i].id <= 15 && name.startsWith("C")){
         break;
     }
-        if(name.startsWith("c") || name.startsWith("C")){ 
-            continue;
-        }
 
         container.innerHTML += 
             `<div class="card">
